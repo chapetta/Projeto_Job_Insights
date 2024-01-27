@@ -14,21 +14,11 @@ def read(path: str) -> List[Dict]:
         print(f'Ops! parece que houve um erro ao encontrar o arquivo {path}')
     return result
 def get_unique_job_types(path: str) -> List[str]:
-    """Checks all different job types and returns a list of them
-
-    Must call `read`
-
-    Parameters
-    ----------
-    path : str
-        Must be passed to `read`
-
-    Returns
-    -------
-    list
-        List of unique job types
-    """
-    raise NotImplementedError
+    content = read(path)
+    list_of_job_types = []
+    for item in content:
+        list_of_job_types.append(item['job_type'])
+    return list(set(list_of_job_types))
 
 
 def filter_by_job_type(jobs: List[Dict], job_type: str) -> List[Dict]:
