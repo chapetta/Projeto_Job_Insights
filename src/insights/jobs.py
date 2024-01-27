@@ -2,6 +2,7 @@ from functools import lru_cache
 from typing import List, Dict
 import csv
 
+
 @lru_cache
 def read(path: str) -> List[Dict]:
     result = []
@@ -13,6 +14,8 @@ def read(path: str) -> List[Dict]:
     except FileNotFoundError:
         print(f'Ops! parece que houve um erro ao encontrar o arquivo {path}')
     return result
+
+
 def get_unique_job_types(path: str) -> List[str]:
     content = read(path)
     list_of_job_types = []

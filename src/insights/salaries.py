@@ -7,12 +7,14 @@ def get_max_salary(path: str) -> int:
     list_of_max_salaries = []
     for item in file:
         if item['max_salary'] != '':
-          try:
-              max_salary_value = int(item['max_salary'])
-              list_of_max_salaries.append(max_salary_value)
-          except ValueError:
-              pass
+            try:
+                max_salary_value = int(item['max_salary'])
+                list_of_max_salaries.append(max_salary_value)
+            except ValueError:
+                pass
     return max(list_of_max_salaries)
+
+
 def get_min_salary(path: str) -> int:
     file = read(path)
     list_of_min_salaries = []
