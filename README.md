@@ -22,7 +22,7 @@ Escrever seus próprios módulos e importá-los em outros códigos.<br>
  <h3> Requisitos do Projeto: </h3>
  
  <p> 
-  1. Implemente a função read<br><br>
+ <h4> 1. Implemente a função read<br><br></h4>
 
 Para começarmos a processar os dados, devemos antes carregá-los em nossa aplicação. Esta função será responsável por abrir o arquivo CSV e retornar os dados no formato de uma lista de dicionários.<br><br>
 
@@ -33,7 +33,7 @@ A função deve retornar uma lista de dicionários, onde as chaves são os cabe�
 
 
    <br><br>
-2.  Implemente a função get_unique_job_types<br><br>
+<h4>2.  Implemente a função get_unique_job_types<br><br></h4>
 
 Agora que temos como carregar os dados, podemos começar a extrair informação deles. Primeiro, vamos identificar quais tipos de empregos existem.<br><br>
 
@@ -41,7 +41,7 @@ A função deve receber o path do arquivo csv com os dados.<br>
 A função deve invocar a função jobs.read com o path recebido para obter os dados.<br>
 A função deve retornar uma lista de valores únicos presentes na coluna job_type.<br><br>
 
-3.  Implemente a função get_unique_industries<br><br>
+<h4>3.  Implemente a função get_unique_industries<br><br></h4>
 
 Da mesma forma, agora iremos identificar quais indústrias estão representadas nesse conjunto de dados.<br><br>
 
@@ -49,7 +49,7 @@ A função deve obter os dados da mesma forma que o requisito 2.<br>
 A função deve retornar uma lista de valores únicos presentes na coluna industry.<br>
 A função desconsidera valores vazios<br><br>
 
-4. Implemente a função get_max_salary<br><br>
+<h4>4. Implemente a função get_max_salary<br><br></h4>
 
 Os dados apresentam faixas salariais para cada emprego exibido. Vamos agora encontrar o maior valor de todas as faixas.<br><br>
 
@@ -58,7 +58,7 @@ A função deve ignorar os valores ausentes.<br>
 A função deve retornar um valor inteiro com o maior salário presente na coluna max_salary.
 <br><br>
 
-5.Implemente a função get_min_salary<br><br>
+<h4>5.Implemente a função get_min_salary<br><br></h4>
 
 Os dados apresentam faixas salariais para cada emprego exibido. Vamos agora encontrar o menor valor de todas as faixas.<br><br>
 
@@ -66,7 +66,7 @@ A função deve obter os dados da mesma forma que o requisito 2.<br>
 A função deve ignorar os valores ausentes.<br>
 A função deve retornar um valor inteiro com o menor salário presente na coluna min_salary.<br><br>
 
-6. Implemente a função filter_by_job_type<br><br>
+<h4>6. Implemente a função filter_by_job_type<br><br></h4>
 
 Os empregos estão listados em um aplicativo web. Para permitir que a pessoa usuária possa filtrar os empregos por tipo de emprego, vamos precisar implementar esse filtro.<br><br>
 
@@ -75,7 +75,7 @@ A função deve receber uma string job_type como segundo parâmetro.<br>
 A função deve retornar uma lista com todos os empregos onde a coluna job_type corresponde ao parâmetro job_type.
 <br><br>
 
-7.  Implemente a função filter_by_industry<br><br>
+<h4>7.  Implemente a função filter_by_industry<br><br></h4>
 
 Do mesmo modo, o aplicativo precisa permitir uma filtragem por indústria. Vamos precisar implementar esse filtro também.<br><br>
 
@@ -84,7 +84,7 @@ A função deve receber uma string industry como segundo parâmetro.<br>
 A função deve retornar uma lista de dicionários com todos os empregos onde a coluna industry corresponde ao parâmetro industry.
 <br><br>
 
-8. Implemente a função matches_salary_range<br><br>
+<h4>8. Implemente a função matches_salary_range<br><br></h4>
 
 O aplicativo vai precisar filtrar os empregos por salário também. Como uma função auxiliar, implemente matches_salary_range para conferir que o salário procurado está dentro da faixa salarial daquele emprego. Vamos aproveitar também para conferir se a faixa salarial faz sentido -- isto é, se o valor mínimo é menor que o valor máximo.<br><br>
 
@@ -97,7 +97,7 @@ o valor de min_salary é maior que o valor de max_salary;<br>
 o parâmetro salary tem valores não numéricos;<br>
 A função deve retornar True se o salário procurado estiver dentro da faixa salarial ou False se não estiver.<br><br>
 
-9. Implemente a função filter_by_salary_range<br><br>
+<h4>9. Implemente a função filter_by_salary_range<br><br></h4>
 
 Agora vamos implementar o filtro propriamente dito. Para esta filtragem, podemos usar a função auxiliar implementada no requisito anterior -- tomando o cuidado de descartar os empregos que apresentarem faixas salariais inválidas.<br><br>
 
@@ -108,7 +108,7 @@ Observação: strings que representem números são valores válidos para min_sa
 A função deve retornar uma lista com todos os empregos onde o salário salary estiver entre os valores da coluna min_salary e max_salary.
 <br><br>
 
-10.- Implemente um teste para a função count_ocurrences<br><br>
+<h4>10.- Implemente um teste para a função count_ocurrences<br><br></h4>
 
 A empresa cliente contratou um relatório que informa a quantidade de ocorrências das palavra Python e Javascript nos dados e, para isso, temos uma implementação pronta em src/pre_built/counter.py. Durante o desenvolvimento, sofremos com alguns bugs, que já foram resolvidos. Para termos certeza e confiança da nossa entrega, no entanto, e não corrermos riscos, precisaremos de testes automatizados que garantam isso!<br><br>
 
@@ -120,7 +120,7 @@ word uma string com a palavra a ser contabilizada.<br>
 Garantir que a função retorna corretamente a quantidade de ocorrências da palavra solicitada<br>
 A contagem de palavras deve ser case insentitive, ou seja, não diferenciar letras maiúsculas de minúsculas<br><br>
 
-11. Implemente um teste para a função read_brazilian_file<br><br>
+<h4>11. Implemente um teste para a função read_brazilian_file<br><br></h4>
 
 A empresa cliente analisa relatórios em inglês, porém agora ela quer expandir seus negócios aqui para o Brasil e deseja analisar relatórios em português também. No entanto, as chaves do dict que usamos pra organizar os dados devem continuar em inglês. Ou seja: para gerar o relatório, deveremos ler as chaves em português e traduzi-las para inglês para povoar os nossos dados.<br><br>
 
@@ -132,7 +132,7 @@ Chamar a função read_brazilian_file e ela deve receber um parâmetro:<br>
 path que é uma string com o caminho do arquivo csv em português (tests/mocks/brazilians_jobs.csv);<br>
 Retorna uma lista de dicionários com as chaves em inglês<br><br>
 
-12.  Implemente um teste para a função sort_by<br><br>
+<h4>12.  Implemente um teste para a função sort_by<br><br></h4>
 
 Por fim, espera-se que a pessoa usuária possa escolher um critério de ordenação para exibir os empregos. Já temos uma implementação para essa ordenação em src/pre_built/sorting.py, mas queremos ter certeza de que ela funciona e, principalmente, que não deixará de funcionar conforme vamos implementando novos recursos. Precisamos então escrever um teste!<br><br>
 
