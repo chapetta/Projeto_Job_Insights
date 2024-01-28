@@ -2,18 +2,18 @@
  
  <h4>Sobre o projeto:</h4>
  <p>
- Neste projeto tive que implementar análises a partir de um conjunto de dados sobre empregos. As implementações foram incorporadas a um aplicativo Web desenvolvido com Flask (um framework web muito popular na comunidade Python). Também escrevi alguns testes implementação de uma análise de dados.
-Os dados foram extraídos do site Glassdoor e obtidos através do Kaggle, uma plataforma disponiblizando conjuntos de dados para cientistas de dados.
+ Neste projeto tive que implementar análises a partir de um conjunto de dados sobre empregos. As implementações foram incorporadas a um aplicativo Web desenvolvido com Flask (um framework web muito popular na comunidade Python). Também escrevi alguns testes implementação de uma análise de dados.<br>
+Os dados foram extraídos do site Glassdoor e obtidos através do Kaggle, uma plataforma disponiblizando conjuntos de dados para cientistas de dados.<br><br>
 
-🚵 Habilidades a serem trabalhadas:
+🚵 Habilidades a serem trabalhadas:<br><br>
 
-Utilizar o terminal interativo do Python.
-Utilizar estruturas condicionais e de repetição.
-Utilizar funções built-in do Python.
-Utilizar tratamento de exceções.
-Realizar a manipulação de arquivos.
-Escrever funções.
-Escrever testes com Pytest.
+Utilizar o terminal interativo do Python.<br>
+Utilizar estruturas condicionais e de repetição.<br>
+Utilizar funções built-in do Python.<br>
+Utilizar tratamento de exceções.<br>
+Realizar a manipulação de arquivos.<br>
+Escrever funções.<br>
+Escrever testes com Pytest.<br>
 Escrever seus próprios módulos e importá-los em outros códigos.<br>
 
 
